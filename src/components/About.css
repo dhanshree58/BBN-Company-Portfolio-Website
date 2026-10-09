@@ -1,0 +1,118 @@
+
+.about-section {
+  padding: 100px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+  background: #151613;
+  color: #f5f4ef;
+}
+
+.about-image {
+  height: 470px;
+  position: relative;
+  overflow: hidden;
+  background: #292a26;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7) saturate(0.7);
+}
+
+.about-image-caption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 20px;
+  background: #111210e8;
+  border-left: 3px solid #ff6b24;
+}
+
+.about-image-caption span {
+  color: #ff6b24;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.about-image-caption strong {
+  font-size: 23px;
+}
+
+.about-content h2 {
+  margin: 18px 0;
+  font-size: clamp(30px, 3.6vw, 45px);
+  line-height: 1.12;
+  letter-spacing: -1.4px;
+}
+
+.about-content > p {
+  color: #aaa9a2;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.about-benefits {
+  display: grid;
+  gap: 20px;
+  margin: 28px 0;
+}
+
+.about-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.about-benefit > svg {
+  flex-shrink: 0;
+  color: #ff6b24;
+}
+
+.about-benefit strong {
+  font-size: 13px;
+}
+
+.about-benefit p {
+  margin: 5px 0 0;
+  color: #9c9c94;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 19px;
+  background: #ff6b24;
+  color: #111210;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  transition: transform 0.2s;
+}
+
+.about-button:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 800px) {
+  .about-section {
+    padding: 70px 5%;
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .about-image {
+    height: 330px;
+  }
+}

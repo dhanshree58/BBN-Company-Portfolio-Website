@@ -1,0 +1,96 @@
+
+.industries-section {
+  padding: 90px 7%;
+  background: #efeee8;
+  color: #171814;
+}
+
+.industries-heading {
+  max-width: 700px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.industries-heading h2 {
+  margin: 15px 0;
+  font-size: clamp(29px, 4vw, 45px);
+  font-weight: 950;
+  letter-spacing: -1.3px;
+}
+
+.industries-heading p {
+  color: #77776f;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.industries-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.industry-card {
+  padding: 30px;
+  background: white;
+  border: 1px solid #e3e2db;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff6b24;
+}
+
+.industry-icon {
+  width: 53px;
+  height: 53px;
+  display: grid;
+  place-items: center;
+  background: #fff0e7;
+  color: #e75d1d;
+}
+
+.industry-card h3 {
+  margin: 22px 0 10px;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.industry-card p {
+  min-height: 60px;
+  color: #77776f;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.industry-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 15px;
+  color: #20211c;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.industry-card a svg {
+  color: #e75d1d;
+}
+
+@media (max-width: 800px) {
+  .industries-section {
+    padding: 70px 5%;
+  }
+
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-card p {
+    min-height: auto;
+  }
+}

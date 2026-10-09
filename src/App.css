@@ -1,0 +1,10 @@
+
+.app {
+  min-height: 100vh;
+  overflow: hidden;
+  background: #111210;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
