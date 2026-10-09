@@ -44,7 +44,8 @@ npm run build
 ```
 
 ## Deployment
-The website can be deployed using platforms such as Vercel or Netlify.
+The website is being deployed on Vercel.
+https://bbn-company-portfolio-website.vercel.app/
 
 ## License
 This project is created for BBN business purposes.
